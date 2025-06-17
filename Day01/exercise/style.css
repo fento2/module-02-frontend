@@ -67,4 +67,14 @@ body {
 #avatar-image {
   width: 32px;
   height: 32px;
+  
+}
+
+#name {
+  width: 129px;
+  height: 32px;
+  color: var(--dark-gray);
+  font-weight: 800;
+  margin-left: 10px;
+  vertical-align: 10px;
 }
