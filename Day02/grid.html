@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS: Grid</title>
+</head>
+<style>
+    #container {
+        border: 1px solid red;
+        display: grid;
+        /* grid-template-columns: 100px 200px 100px; */
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100px 75px;
+        row-gap: 10px;
+        column-gap: 10px;
+        grid-template-areas:
+            "area1 area1 area2"
+            "area3 area4 area4";
+    }
+
+    #item-1 {
+        background-color: yellow;
+        grid-area: area1;
+    }
+
+    #item-2 {
+        background-color: black;
+        grid-area: area2;
+    }
+
+    #item-3 {
+        background-color: orange;
+        grid-area: area3;
+    }
+
+    #item-4 {
+        background-color: blue;
+        grid-area: area4;
+    }
+</style>
+
+<body>
+    <div id="container">
+        <div id="item-1"></div>
+        <div id="item-2"></div>
+        <div id="item-3"></div>
+        <div id="item-4"></div>
+    </div>
+</body>
+
+</html>

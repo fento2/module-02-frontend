@@ -26,6 +26,8 @@ body {
   border-color: var(--dark-gray);
   box-shadow: 8px 8px 0 var(--black);
   padding: 24px;
+  padding-bottom: 1px;
+  
 }
 
 #article-img {

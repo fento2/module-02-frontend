@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS: Position</title>
+    <style>
+        #container {
+            width: 50vw;
+            height: 300vh;
+            border: 2px solid black;
+            margin: auto;
+        }
+
+        #container>div {
+            width: 400px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container"><!--position-->
+        <div id="static-example" style="position: static;">
+            <h2>Position: Static</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error voluptate non tenetur laudantium nemo!
+                Perspiciatis, libero, dolore quo quod earum voluptate similique fugit totam porro magnam sit voluptatum,
+                assumenda eveniet.
+            </p>
+        </div>
+        <div id="relative-example" style="position: relative; left: 30px; top: -20px; background-color: aqua;">
+            <h2>Position: Relative</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error voluptate non tenetur laudantium nemo!
+                Perspiciatis, libero, dolore quo quod earum voluptate similique fugit totam porro magnam sit voluptatum,
+                assumenda eveniet.
+            </p>
+        </div>
+        <div id="absolute-example" style="position: absolute;
+         left: 0px; top: 0px">
+            <!--acuan position absolute mengikuti parent terdekatnya yang relative/kalo tidak maka html menjadi acuan-->
+            <h2>Position: Absolute</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error voluptate non tenetur laudantium nemo!
+                Perspiciatis, libero, dolore quo quod earum voluptate similique fugit totam porro magnam sit voluptatum,
+                assumenda eveniet.
+            </p>
+        </div>
+        <div id="Fixed-example" style="position: fixed; right: 10px; bottom: 10px">
+            <!--acuan position fixed mengikuti viewport mengabaikan semua parantnya-->
+            <h2>Position: Fixed</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error voluptate non tenetur laudantium nemo!
+                Perspiciatis, libero, dolore quo quod earum voluptate similique fugit totam porro magnam sit voluptatum,
+                assumenda eveniet.
+            </p>
+        </div>
+        <div id="Sticky-example" style="position: sticky; top: 10px">
+           <!--sticky akan menjadi fixed ketika nilai yang ditentukan di tulis contoh di atas 10px-->
+            <h2>Position: Sticky</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error voluptate non tenetur laudantium nemo!
+                Perspiciatis, libero, dolore quo quod earum voluptate similique fugit totam porro magnam sit voluptatum,
+                assumenda eveniet.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
