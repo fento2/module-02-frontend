@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro DOM</title>
+</head>
+
+<body>
+    <h1 id="title">Welcome</h1>
+    <input type="text" id="in-text" placeholder="Masukan tulisan baru">
+    <button type="button" onclick="updateText()">Update text</button>
+    <hr />
+    <h2>Calculator</h2>
+    <input type="number" id="angka-1" placeholder="Masukan angka-1" />
+    <input type="number" id="angka-2" placeholder="Masukan angka-2" />
+    <br />
+    <button type="button" onclick="tambah()">+</button>
+    <button type="button" onclick="kurang()">-</button>
+    <button type="button" onclick="kali()">x</button>
+    <button type="button" onclick="bagi()">/</button>
+    <h3>Hasil: <span id="result"></span></h3>
+</body>
+<script>
+    function updateText() {
+        const inText = document.getElementById("in-text").value;
+        const elementH1 = document.getElementById("title");
+        elementH1.style.color = "red";
+        elementH1.innerText = inText;
+    }
+    //-----------------------------------------------------------------
+    function tambah() {
+        const angkaA = parseInt(document.getElementById("angka-1").value);
+        const angkaB = parseInt(document.getElementById("angka-2").value);
+        const result = document.getElementById("result");
+        result.innerText = angkaA + angkaB;
+    }
+    function kurang() {
+        const angkaA = parseInt(document.getElementById("angka-1").value);
+        const angkaB = parseInt(document.getElementById("angka-2").value);
+        const result = document.getElementById("result");
+        result.innerText = angkaA - angkaB;
+    }
+    function kali() {
+        const angkaA = parseInt(document.getElementById("angka-1").value);
+        const angkaB = parseInt(document.getElementById("angka-2").value);
+        const result = document.getElementById("result");
+        result.innerText = angkaA * angkaB;
+    }
+    function bagi() {
+        const angkaA = parseInt(document.getElementById("angka-1").value);
+        const angkaB = parseInt(document.getElementById("angka-2").value);
+        const result = document.getElementById("result");
+        result.innerText = angkaA / angkaB;
+    }
+
+    
+</script>
+
+</html>

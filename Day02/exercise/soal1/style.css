@@ -63,7 +63,7 @@
     }
 
     #discount {
-        font-family: "Fraunces" sans-serif;
+        font-family: "Fraunces", sans-serif;
         font-size: 32px;
         font-weight: bold;
         line-height: 32px;
@@ -168,7 +168,7 @@
     }
 
     #discount {
-        font-family: "Fraunces" sans-serif;
+        font-family: "Fraunces", sans-serif;
         font-size: 32px;
         font-weight: bold;
         line-height: 32px;

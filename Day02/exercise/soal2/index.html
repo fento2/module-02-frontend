@@ -77,3 +77,75 @@
 </body>
 
 </html>
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+      }
+
+      #container {
+        border: 1px solid red;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+      }
+
+      #container > div {
+        height: 200px;
+        border: 1px solid blue;
+      }
+
+      /* Large Screen */
+      @media screen and (min-width: 769px) and (max-width: 1440px) {
+        #container {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: repeat(2, 200px);
+          grid-template-areas:
+            "area1 area1 area2 area5"
+            "area3 area4 area4 area5";
+          column-gap: 20px;
+        }
+
+        #container > div {
+          height: auto;
+        }
+
+        #item-1 {
+          grid-area: area1;
+        }
+        #item-2 {
+          grid-area: area2;
+        }
+        #item-3 {
+          grid-area: area3;
+        }
+        #item-4 {
+          grid-area: area4;
+        }
+        #item-5 {
+          grid-area: area5;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="item-1"></div>
+      <div id="item-2"></div>
+      <div id="item-3"></div>
+      <div id="item-4"></div>
+      <div id="item-5"></div>
+    </div>
+  </body>
+</html>-->

@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+body {
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+
+}
+
+.page {
+  background: linear-gradient(66deg, rgba(33, 4, 130, 1) 0%, rgba(133, 3, 3, 1) 50%, rgba(227, 218, 45, 1) 100%);
+  width: 100vw;
+  max-height: 50vh;
+  padding: 5vh;
+  border-radius: 0 0 20px 20px;
+  gap: 10px;
+  overflow-y: auto;
+}
+
+#about {
+  font-size: x-large;
+  line-height: 1cm;
+  font-style: italic;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background-color: beige;
+}
+
+#nav-menu {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
